@@ -1,0 +1,10 @@
+execute if data storage float: {current_digit:"0"} run return 0
+execute if data storage float: {current_digit:"1"} run return 1
+execute if data storage float: {current_digit:"2"} run return 2
+execute if data storage float: {current_digit:"3"} run return 3
+execute if data storage float: {current_digit:"4"} run return 4
+execute if data storage float: {current_digit:"5"} run return 5
+execute if data storage float: {current_digit:"6"} run return 6
+execute if data storage float: {current_digit:"7"} run return 7
+execute if data storage float: {current_digit:"8"} run return 8
+execute if data storage float: {current_digit:"9"} run return 9
