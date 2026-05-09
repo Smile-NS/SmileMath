@@ -1,0 +1,1 @@
+$data modify storage float: str_decimal set string storage float: input $(dec_start)

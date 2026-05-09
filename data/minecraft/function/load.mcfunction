@@ -7,5 +7,4 @@ scoreboard players set #23 sml 23
 scoreboard players set #10^9 sml 1000000000
 
 data modify storage float: split_decimal set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
-function smile_math:float/dec2bit/dec2score/reset
+data remove storage float: bit_decimal

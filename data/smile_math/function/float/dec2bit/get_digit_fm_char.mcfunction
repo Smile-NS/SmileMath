@@ -8,3 +8,4 @@ execute if data storage float: {current_digit:"6"} run return 6
 execute if data storage float: {current_digit:"7"} run return 7
 execute if data storage float: {current_digit:"8"} run return 8
 execute if data storage float: {current_digit:"9"} run return 9
+return 0

@@ -1,5 +1,6 @@
 {
      "values":[
-          "minecraft:load"
+          "minecraft:load",
+          "smile_math:float/dec2bit/dec2score/reset"
      ]
 }
