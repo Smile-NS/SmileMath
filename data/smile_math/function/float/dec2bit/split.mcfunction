@@ -3,6 +3,8 @@
 #spilit.end
 #split.decLen
 
+data remove storage float: current_digit
+
 $execute store success score #split.success sml run data modify storage float: current_digit set string storage float: str_decimal $(start) $(end)
 execute if score #split.success sml matches 0 run return run scoreboard players operation #split.decLen sml = #split.start sml
 

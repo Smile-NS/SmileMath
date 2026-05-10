@@ -26,6 +26,7 @@ execute store result storage float: dec_start int 1.0 run scoreboard players get
 function smile_math:float/dec2bit/split_dec_part with storage float:
 
 function smile_math:float/dec2bit/split {start:0, end:1}
+data remove storage float: current_digit
 
 execute store result score #float.decimal sml run function smile_math:float/dec2bit/dec2score/get_score_fm_dec
 execute if score #float.integer sml matches 1.. run function smile_math:float/dec2bit/dec2bit
