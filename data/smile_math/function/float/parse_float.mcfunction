@@ -8,6 +8,8 @@
 #float.decimal
 #float.dec_start
 
+$data modify storage float: input set value $(input)
+
 execute store result score #float.integer sml run data get storage float: input
 execute store result storage float: integer int 1.0 run scoreboard players get #float.integer sml
 
@@ -23,3 +25,4 @@ function smile_math:float/dec2bit/split {start:0, end:1}
 
 execute store result score #float.decimal sml run function smile_math:float/dec2bit/dec2score/get_score_fm_dec
 function smile_math:float/dec2bit/dec2bit
+
