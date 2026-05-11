@@ -9,6 +9,7 @@
 #float.dec_start
 #float.exp
 #float.sign
+#float.is_integer
 
 $data modify storage float: input set value $(input)
 
@@ -28,13 +29,16 @@ execute if score #float.sign sml matches 1 run scoreboard players add #float.dec
 scoreboard players add #float.dec_start sml 1
 execute store result storage float: dec_start int 1.0 run scoreboard players get #float.dec_start sml
 
+execute store result score #float.is_integer sml run function smile_math:float/is_integer
+
 function smile_math:float/int2bit/int2bit
 
-function smile_math:float/dec2bit/split_dec_part with storage float:
+execute if score #float.is_integer sml matches 0 run function smile_math:float/dec2bit/split_dec_part with storage float:
+execute if score #float.is_integer sml matches 0 run function smile_math:float/dec2bit/split {start:0, end:1}
+execute if score #float.is_integer sml matches 0 run execute store result score #float.decimal sml run function smile_math:float/dec2bit/dec2score/get_score_fm_dec
 
-function smile_math:float/dec2bit/split {start:0, end:1}
+execute if score #float.is_integer sml matches 1 run scoreboard players set #float.decimal sml 0
 
-execute store result score #float.decimal sml run function smile_math:float/dec2bit/dec2score/get_score_fm_dec
 execute if score #float.integer sml matches 1.. run function smile_math:float/dec2bit/dec2bit
 execute if score #float.integer sml matches 0 run function smile_math:float/dec2bit/small_dec2bit
 
