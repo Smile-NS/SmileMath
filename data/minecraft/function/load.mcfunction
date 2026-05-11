@@ -1,4 +1,5 @@
 scoreboard objectives add sml dummy
+scoreboard players set #-1 sml -1
 scoreboard players set #0 sml 0
 scoreboard players set #1 sml 1
 scoreboard players set #2 sml 2
