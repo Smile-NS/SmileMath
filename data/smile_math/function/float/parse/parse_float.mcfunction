@@ -14,7 +14,7 @@
 $data modify storage float: input set value $(input)
 
 data remove storage float: output.fraction
-scoreboard players set #parse.exp sml 0
+scoreboard players set #parse.exp sml 127
 
 execute store result score #parse.sign sml run function smile_math:float/parse/get_sign
 execute store result storage float: output.sign int 1.0 run scoreboard players get #parse.sign sml
@@ -30,6 +30,7 @@ scoreboard players add #parse.dec_start sml 1
 execute store result storage float: dec_start int 1.0 run scoreboard players get #parse.dec_start sml
 
 execute store result score #parse.is_integer sml run function smile_math:float/parse/is_integer
+execute if score #parse.is_integer sml matches 1 if score #parse.integer sml matches 0 run return run function smile_math:float/parse/zero
 
 function smile_math:float/parse/integer/int2bit
 
