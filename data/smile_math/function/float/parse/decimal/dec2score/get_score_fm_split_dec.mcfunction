@@ -1,5 +1,4 @@
 #dec2score.digit_index
-#dec2score.decimal
 #dec2score.result
 #dec2score.tmp_decimal
 
