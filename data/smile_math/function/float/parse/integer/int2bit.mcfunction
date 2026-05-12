@@ -16,4 +16,4 @@ scoreboard players add #float.exp sml 1
 execute if score #int2bit.bit sml matches 0 run data modify storage float: output.fraction prepend value 0
 execute if score #int2bit.bit sml matches 1 run data modify storage float: output.fraction prepend value 1
 
-execute if score #int2bit.integer sml matches 1.. run function smile_math:float/int2bit/int2bit
+execute if score #int2bit.integer sml matches 1.. run function smile_math:float/parse/integer/int2bit

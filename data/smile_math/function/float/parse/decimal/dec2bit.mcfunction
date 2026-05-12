@@ -1,4 +1,3 @@
-#dec2bit.digit_index
 #dec2bit.frac_len
 
 execute store result score #dec2bit.frac_len sml run data get storage float: output.fraction
@@ -11,4 +10,4 @@ execute unless score #float.decimal sml matches 1000000000.. run data modify sto
 
 scoreboard players operation #float.decimal sml %= #10^9 sml
 
-function smile_math:float/dec2bit/dec2bit
+function smile_math:float/parse/decimal/dec2bit
