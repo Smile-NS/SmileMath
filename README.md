@@ -1,3 +1,3 @@
 # SmileMath
 ## Floatの演算
-IEEE754の再現
+マインクラフトでIEEE754の再現
