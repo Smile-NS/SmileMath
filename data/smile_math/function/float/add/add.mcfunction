@@ -9,3 +9,6 @@ execute if score #add.x_exp sml < #add.y_exp sml run data modify storage float: 
 execute if score #add.x_exp sml < #add.y_exp sml run data modify storage float: add.y set from storage float: add.input.x
 
 function smile_math:float/add/shifter/shifter
+
+data modify storage float: add.output.fraction set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+function smile_math:float/add/calc/calc_bit {current_index:24}
